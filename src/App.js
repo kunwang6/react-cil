@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {NavLink,Route} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import MyNavLink from './components/MyNavLink'
@@ -24,9 +24,9 @@ export default class App extends Component {
               <a className="list-group-item active" href="./home.html">Home</a>*/}
               {/*在react靠路由连接切组件*/ }
       
-               <NavLink activeClassName="kun" className="list-group-item" to="/about">About</NavLink>
-              <NavLink activeClassName="kun" className="list-group-item" to="/home">Home</NavLink>
-              <MyNavLink></MyNavLink>
+             
+              <MyNavLink to="/about">About</MyNavLink>
+              <MyNavLink to="/home">Home</MyNavLink>
 
 
             </div>
