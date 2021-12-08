@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Route,Switch,Redirect} from 'react-router-dom'
+import {Route,Switch} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import MyNavLink from './components/MyNavLink'
@@ -25,7 +25,7 @@ export default class App extends Component {
               {/*在react靠路由连接切组件*/ }
       
              
-              <MyNavLink to="/about" >About</MyNavLink>
+              <MyNavLink to="/about">About</MyNavLink>
               <MyNavLink to="/home">Home</MyNavLink>
 
 
@@ -39,7 +39,6 @@ export default class App extends Component {
                   <Switch> 
                   <Route path="/about" component={About}/>
                   <Route path="/home" component={Home}/>
-                  <Redirect to='/about'/>
                   </Switch>
               
               </div>

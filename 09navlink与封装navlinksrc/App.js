@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Route,Switch,Redirect} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import MyNavLink from './components/MyNavLink'
@@ -25,7 +25,7 @@ export default class App extends Component {
               {/*在react靠路由连接切组件*/ }
       
              
-              <MyNavLink to="/about" >About</MyNavLink>
+              <MyNavLink to="/about">About</MyNavLink>
               <MyNavLink to="/home">Home</MyNavLink>
 
 
@@ -35,12 +35,9 @@ export default class App extends Component {
             <div className="panel">
               <div className="panel-body">
                 {/*注册路由*/ }
-                {/* Switch 包了的话匹配到的话就不会继续往下匹配了 可以提高匹配效率 */}
-                  <Switch> 
+          
                   <Route path="/about" component={About}/>
                   <Route path="/home" component={Home}/>
-                  <Redirect to='/about'/>
-                  </Switch>
               
               </div>
             </div>
