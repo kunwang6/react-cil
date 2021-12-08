@@ -25,7 +25,7 @@ export default class App extends Component {
               {/*在react靠路由连接切组件*/ }
       
              
-              <MyNavLink to="/about">About</MyNavLink>
+              <MyNavLink to="/about">Abouts</MyNavLink>
               <MyNavLink to="/home">Home</MyNavLink>
 
 
